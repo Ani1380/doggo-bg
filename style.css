@@ -1,0 +1,142 @@
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: whitesmoke;
+}
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    padding: 10px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+nav ul li a:hover{
+    color: red;
+}
+.motto{
+    background-image: url(resources/img.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    text-align: left;
+    padding: 100px;
+}
+span{
+    font-weight: 100;
+    font-style: bold;
+    font-family: 'Nunito', sans-serif;
+}
+.details{
+    position: absolute;
+    top: 30%;
+}
+.details h1{
+    font-size: 99px;
+    color: white;
+}
+.details h3{
+    font-size: 44px;
+    color: white;
+}
+.details h4{
+    font-size: 40px;
+    color: whitesmoke;
+}
+.middler{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #fb5283, #ff466f, #ff3d5a, #ff3642, #ff3527);  
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button:hover{
+    width: 160px;
+    background-image: radial-gradient(circle, #ec9a00, #ca9b0a, #ab991e, #8f942f, #788d3e);
+    color: lavender;
+}
+.donate{
+    text-align: center;
+    min-width: 50%;
+    padding: 200px;
+}
+.texting{
+    background-image: url(resources/motto.jpg);
+    background-size: cover;
+    flex: 1;
+    text-align: right;
+    min-height: 50vh;
+    padding: 100px 150px 100px 150px;
+}
+.texting p{
+    text-align: right;
+    font-size: 30px;
+    color: whitesmoke;
+
+}
+.footer{
+    background-image: linear-gradient(to right, #fb5283, #ff466f, #ff3d5a, #ff3642, #ff3527);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer ul{
+    flex: 1;
+    text-align: right;
+    padding: 10px;
+}
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
