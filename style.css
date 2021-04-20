@@ -6,6 +6,9 @@
 body{
     background-color: whitesmoke;
 }
+img{
+    width: 100%;
+}
 .container{
     width: 100%;
     box-sizing: border-box;
@@ -43,6 +46,9 @@ nav ul li a{
     color: black;
     font-size: 20px;
     transition: 0.5s ease;
+}
+nav ul li.active a{
+    color: red;
 }
 nav ul li a:hover{
     color: red;
@@ -143,3 +149,53 @@ button:hover{
     font-size: 20px;
     transition: 0.5s ease;
 }
+.about{
+    background-image: url(resources/about.jpeg);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    text-align: left;
+    padding: 100px;
+}
+.heading{
+    position: absolute;
+    top: 50%;
+}
+.heading h1{
+    font-size: 7vw;
+    color: white;
+}
+.they{
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 70px;
+}
+.members{
+    display: flex;
+    width: 100%;
+    background: #F0FFF0;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+.members img:hover{
+    cursor: pointer;
+    filter: opacity(0.75);
+}
+.anirban{
+    flex: 33.33%;
+    padding: 15px;
+}
+.ankita{
+    flex: 33.33%;
+    padding: 15px;
+}
+.doggos{
+    flex: 33.33%;
+    padding: 15px;
+}
+
