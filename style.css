@@ -13,6 +13,8 @@ img{
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .navbar{
     background-color: whitesmoke;
@@ -72,11 +74,11 @@ span{
     top: 30%;
 }
 .details h1{
-    font-size: 7vw;
+    font-size: 6vw;
     color: white;
 }
 .details h3{
-    font-size: 5vw;
+    font-size: 3vw;
     color: white;
 }
 .details h4{
@@ -115,13 +117,14 @@ button:hover{
     width: 100%;
     background-size: cover;
     flex: 1;
-    text-align: right;
+    text-align: center;
     min-height: 50vh;
     padding: 100px 150px 100px 150px;
 }
 .texting p{
-    text-align: right;
+    text-align: center;
     font-size: 3vw;
+    font-weight: bold;
     color: whitesmoke;
 
 }
@@ -172,7 +175,12 @@ button:hover{
     text-align: center;
     align-items: center;
     height: 100%;
-    padding: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.they h1{
+    font-size: 3vw;
+    color: black;
 }
 .members{
     display: flex;
@@ -198,4 +206,44 @@ button:hover{
     flex: 33.33%;
     padding: 15px;
 }
-
+.logon{
+    display: flex;
+    background-image: url(resources/login_bg.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 33;
+    color: whitesmoke;
+    font-size: 3vh;
+}
+input[type=text],input[type=email],input[type=password]{
+    border: none;
+    size: 3vh;
+    color: white;
+    margin-top: 10px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid red;
+}
+input[type=submit]{
+    background-color: transparent;
+    transition: 0.6s ease-in;
+    border: none;
+    color: white;
+    font-size: 3vh;
+}
+input[type=submit]:hover{
+    background-color: white;
+    width: 100px;
+    border-color: white;
+    color: black;
+    font-size: 3vh;
+}
